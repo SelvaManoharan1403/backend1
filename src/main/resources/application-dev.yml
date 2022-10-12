@@ -1,0 +1,27 @@
+server:
+  port: 9091
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/tlaccountant
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: arumugapandiyan.6@gmail.com
+    password: vevgosvzmrzixnga
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
+app:
+  jwtSecret:  secret
+  expiryDuration: 100
+  refreshTokenExpirationMs: 1000
